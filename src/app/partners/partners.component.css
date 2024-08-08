@@ -1,0 +1,9 @@
+.partner-wrapper {
+  min-height: 90vh;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
