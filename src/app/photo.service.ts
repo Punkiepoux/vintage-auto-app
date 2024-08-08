@@ -1,8 +1,9 @@
 import { Injectable } from '@angular/core';
 
-@Injectable()
-export class ClubService {
+@Injectable({
+  providedIn: 'root'
+})
+export class PhotoService {
 
   constructor() { }
-
 }

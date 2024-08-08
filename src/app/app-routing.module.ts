@@ -1,11 +1,22 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { HomeComponent } from './home/home.component';
+import { PhotosComponent } from './photos/photos.component';
+import { ServicesComponent } from './services/services.component';
+import { PartnersComponent } from './partners/partners.component';
+import { ContactComponent } from './contact/contact.component';
+import { AdminComponent } from './admin/admin.component';
+
 
 const routes: Routes = [
-  { path: '', redirectTo: 'club', pathMatch: 'full' },
-  { path: 'admin', redirectTo: 'admin', pathMatch: 'full' },
-  { path: '**', component: PageNotFoundComponent },
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: 'home', component: HomeComponent },
+  { path: 'photos', component: PhotosComponent },
+  { path: 'services', component: ServicesComponent },
+  { path: 'partenaires', component: PartnersComponent },
+  { path: 'contact', component: ContactComponent },
+  { path: 'admin', component: AdminComponent },
+  { path: '**', redirectTo: '/home' }
 ];
 
 @NgModule({
