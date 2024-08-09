@@ -11,6 +11,7 @@ import { ServicesComponent } from "./services/services.component";
 import { PartnersComponent } from "./partners/partners.component";
 import { ContactComponent } from "./contact/contact.component";
 import { AdminComponent } from "./admin/admin.component";
+import { CommonModule } from "@angular/common";
 
 
 
@@ -29,6 +30,7 @@ import { AdminComponent } from "./admin/admin.component";
   imports: [
     BrowserModule,
     AppRoutingModule,
+    CommonModule
 ],
   providers: [],
   bootstrap: [AppComponent]
