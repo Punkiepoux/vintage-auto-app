@@ -1,28 +1,28 @@
-<div class="container partner-wrapper flex-center">
+<div class="container">
   <div class="row">
-    <div class="col s12 m6 l4">
-      <div class="card">
-        <div class="card-image">
-          <img src="https://materializecss.com/images/sample-1.jpg">
-          <span class="card-title">Swiper</span>
+    <div class="col s12 m12 l12">
+      <div class="swiper partner-wrapper flex-center">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div *ngFor="let partner of partnerList" class="swiper-slide">
+            <div class="card">
+              <div class="card-image">
+                <img [src]="partner.picture">
+              </div>
+              <div class="card-stacked">
+                <span class="card-title">{{partner.name}}</span>
+                <div class="card-content">
+                  <p>{{partner.description}}</p>
+                </div>
+                <div class="card-action">
+                  <a class="valign-wrapper" [href]="partner.lien">Lien <i class="material-icons">open_in_new</i></a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-    <div class="col s12 m6 l4">
-      <div class="card">
-        <div class="card-image">
-          <img src="https://materializecss.com/images/sample-1.jpg">
-          <span class="card-title">Swiper</span>
-        </div>
-      </div>
-    </div>
-    <div class="col s12 m6 l4">
-      <div class="card">
-        <div class="card-image">
-          <img src="https://materializecss.com/images/sample-1.jpg">
-          <span class="card-title">Swiper</span>
-        </div>
-      </div>
-    </div>
+        <div class="swiper-button-prev orange-text"></div>
+        <div class="swiper-button-next orange-text"></div>
   </div>
 </div>
