@@ -1,3 +1,8 @@
 .photos-wrapper {
   min-height: 90vh;
 }
+
+.custom-img {
+  width: inherit;
+  height: inherit;
+}
