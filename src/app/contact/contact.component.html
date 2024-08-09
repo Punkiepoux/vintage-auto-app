@@ -1,11 +1,13 @@
 <div class="contact-wrapper flex-center">
-  <div class="container ">
+  <div class="container">
     <div class="row">
       <div class="col s12 m12 l12">
-        <h2 class="header">Où nous joindres ?</h2>
+        <h2 class="center">Où nous joindres ?</h2>
         <div class="card horizontal">
           <div class="card-image">
-            <img src="https://materializecss.com/images/sample-1.jpg">
+            <img
+              src="https://maps.googleapis.com/maps/api/staticmap?center=200+Chem.+de+la+Juliette,83190+Ollioules,France,CA&zoom=14&size=400x400&markers=color:red%7Clabel:V%7C43.121459,5.886218&key=AIzaSyCOo7SnpRchFxKlWwLvuTzg98bRuADGceY"
+            />
           </div>
           <div class="card-stacked">
             <div class="card-content flex-center">
@@ -29,6 +31,21 @@
             </div>
           </div>
         </div>
+
+        <div class="col s12 m12 l12">
+          <h4 class="center">Horaires</h4>
+          <ul class="center">
+            <li>lundi > {{contact.monday}}</li>
+            <li>mardi > {{contact.tuesday}}</li>
+            <li>mercredi > {{contact.wednesday}}</li>
+            <li>jeudi > {{contact.thursday}}</li>
+            <li>vendredi > {{contact.friday}}</li>
+            <li>samedi > {{contact.saturday}}</li>
+            <li>dimanche > {{contact.sunday}}</li>
+          </ul>
+        </div>
+
       </div>
+    </div>
   </div>
 </div>
