@@ -13,19 +13,19 @@
             <div class="card-content flex-center">
               <ul>
                 <li class="li-contact center">
-                  <p class="contact-name orange-text">{{ contact.name }}</p>
+                  <p class="contact-name orange-text">{{ contact?.name }}</p>
                 </li>
                 <li class="li-contact valign-wrapper">
                   <i class="material-icons">location_on</i>
-                  <p>{{ contact.address }}</p>
+                  <p>{{ contact?.address }}</p>
                 </li>
                 <li class="li-contact valign-wrapper">
                   <i class="material-icons">phone</i>
-                  <p>{{ contact.phone }}</p>
+                  <p>{{ contact?.phone }}</p>
                 </li>
                 <li class="li-contact valign-wrapper">
                   <i class="material-icons">email</i>
-                  <p>{{ contact.email }}</p>
+                  <p>{{ contact?.email }}</p>
                 </li>
               </ul>
             </div>
@@ -35,13 +35,13 @@
         <div class="col s12 m12 l12">
           <h4 class="center">Horaires</h4>
           <ul class="center">
-            <li>lundi > {{contact.monday}}</li>
-            <li>mardi > {{contact.tuesday}}</li>
-            <li>mercredi > {{contact.wednesday}}</li>
-            <li>jeudi > {{contact.thursday}}</li>
-            <li>vendredi > {{contact.friday}}</li>
-            <li>samedi > {{contact.saturday}}</li>
-            <li>dimanche > {{contact.sunday}}</li>
+            <li>lundi > {{contact?.monday}}</li>
+            <li>mardi > {{contact?.tuesday}}</li>
+            <li>mercredi > {{contact?.wednesday}}</li>
+            <li>jeudi > {{contact?.thursday}}</li>
+            <li>vendredi > {{contact?.friday}}</li>
+            <li>samedi > {{contact?.saturday}}</li>
+            <li>dimanche > {{contact?.sunday}}</li>
           </ul>
         </div>
 

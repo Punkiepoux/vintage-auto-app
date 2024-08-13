@@ -2,20 +2,20 @@ export class partners {
   id: number;
   name: string;
   lien: string;
-  picture: string;
+  logo: string;
   description: string;
 
   constructor (
     id: number,
     name: string,
     lien: string,
-    picture: string,
+    logo: string,
     description: string,
   ) {
     this.id = id;
     this.name = name;
     this.lien = lien;
-    this.picture = picture;
+    this.logo = logo;
     this.description = description;
   }
 }
