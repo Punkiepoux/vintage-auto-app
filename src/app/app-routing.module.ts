@@ -5,7 +5,7 @@ import { PhotosComponent } from './photos/photos.component';
 import { ServicesComponent } from './services/services.component';
 import { PartnersComponent } from './partners/partners.component';
 import { ContactComponent } from './contact/contact.component';
-import { AdminComponent } from './admin/admin.component';
+import { MainComponent } from './back-office/main/main.component';
 
 
 const routes: Routes = [
@@ -15,7 +15,7 @@ const routes: Routes = [
   { path: 'services', component: ServicesComponent },
   { path: 'partenaires', component: PartnersComponent },
   { path: 'contact', component: ContactComponent },
-  { path: 'admin', component: AdminComponent },
+  { path: 'admin', component: MainComponent },
   { path: '**', redirectTo: '/home' }
 ];
 
