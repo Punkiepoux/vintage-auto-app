@@ -8,7 +8,7 @@ import { AdminServicesComponent } from './services/services.component';
 import { BackOfficeComponent } from './back-office.component';
 
 const routes: Routes = [
-  { path: 'admin',
+  { path: '',
     component: BackOfficeComponent,
     children: [
       { path: 'users', component: AdminComponent },
@@ -16,7 +16,7 @@ const routes: Routes = [
       { path: 'partenaires', component: AdminPartnersComponent },
       { path: 'photos', component: AdminPhotosComponent },
       { path: 'services', component: AdminServicesComponent },
-      //{ path: '', redirectTo: 'users', pathMatch: 'full' }
+      { path: '', redirectTo: 'users', pathMatch: 'full' }
     ]
   }
 ];

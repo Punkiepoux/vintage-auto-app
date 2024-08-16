@@ -1,0 +1,23 @@
+a {
+  color: inherit !important;
+  padding-left: 32px !important;
+  padding-right: 8px !important;
+}
+
+i {
+  color: inherit !important;
+  margin: 0 !important;
+}
+
+.back-office-wrapper {
+  min-height: 100vh;
+}
+
+.sidenav {
+  width: 200px;
+}
+
+.content {
+  margin-left: 230px;
+  margin-right: 32px;
+}

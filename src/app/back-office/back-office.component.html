@@ -1,14 +1,27 @@
 <nav class="sidenav sidenav-fixed blue-grey darken-3">
   <ul class="white-text">
-    <li><a routerLink="/admin/users" routerLinkActive="active">Utilisateurs</a></li>
-    <li><a routerLink="/admin/photos" routerLinkActive="active">Photos</a></li>
-    <li><a routerLink="/admin/services" routerLinkActive="active">Services</a></li>
-    <li><a routerLink="/admin/partners" routerLinkActive="active">Partenaires</a></li>
-    <li><a routerLink="/admin/contact" routerLinkActive="active">Contact</a></li>
+    <h4 class="center">Menu</h4>
+    <div class="divider"></div>
+    <li>
+      <a routerLink="/admin/users" routerLinkActive="active">Utilisateurs <i class="material-icons right">people</i></a>
+    </li>
+    <li>
+      <a routerLink="/admin/photos" routerLinkActive="active">Photos <i class="material-icons right">people</i></a>
+    </li>
+    <li>
+      <a routerLink="/admin/services" routerLinkActive="active">Services <i class="material-icons right">people</i></a>
+    </li>
+    <li>
+      <a routerLink="/admin/partenaires" routerLinkActive="active">Partenaires <i class="material-icons right">people</i></a>
+    </li>
+    <li>
+      <a routerLink="/admin/contact" routerLinkActive="active">Contact <i class="material-icons right">people</i></a>
+    </li>
   </ul>
 </nav>
 
 <div class="back-office-wrapper">
-  <main>
-  </main>
+  <div class="content">
+    <router-outlet></router-outlet>
+  </div>
 </div>
