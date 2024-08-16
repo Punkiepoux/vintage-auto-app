@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ApiService } from '../service/api.service';
+import { ApiService } from '../api-service/api.service';
 import { Contact } from './contact';
 import { CONTACTS } from './mock-contact';
 

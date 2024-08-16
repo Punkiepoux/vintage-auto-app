@@ -2,18 +2,16 @@
   <nav class="blue-grey darken-4">
     <div class="nav-wrapper">
       <a href="" class="brand-logo left orange-text">VA83</a>
-      <ul *ngIf="admin == false" id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a class="orange-text" href="/home">Home</a></li>
-        <li><a class="orange-text" href="/photos">Photos</a></li>
-        <li><a class="orange-text" href="/services">Services</a></li>
-        <li><a class="orange-text" href="/partenaires">Partenaires</a></li>
-        <li><a class="orange-text" href="/contact">Contact</a></li>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a class="orange-text" routerLink="/home" routerLinkActive="active">Home</a></li>
+        <li><a class="orange-text" routerLink="/photos" routerLinkActive="active">Photos</a></li>
+        <li><a class="orange-text" routerLink="/services" routerLinkActive="active">Services</a></li>
+        <li><a class="orange-text" routerLink="/partenaires" routerLinkActive="active">Partenaires</a></li>
+        <li><a class="orange-text" routerLink="/contact" routerLinkActive="active">Contact</a></li>
       </ul>
-      <div *ngIf="admin == false" data-target="mobile-demo" class="right sidenav-trigger hide-on-large-only">
+      <div data-target="mobile-demo" class="right sidenav-trigger hide-on-large-only">
         <i class="material-icons orange-text">menu</i>
       </div>
-      <a *ngIf="admin == true" href="/admin" class="brand-logo center orange-text">Administration</a>
-      <a *ngIf="admin == true" href="/home" class="brand-logo right orange-text">Retour</a>
     </div>
   </nav>
 </div>

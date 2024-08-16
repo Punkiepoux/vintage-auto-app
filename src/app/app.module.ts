@@ -14,7 +14,6 @@ import { AdminComponent } from "./admin/admin.component";
 import { CommonModule } from "@angular/common";
 
 
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +24,7 @@ import { CommonModule } from "@angular/common";
     ServicesComponent,
     PartnersComponent,
     ContactComponent,
-    AdminComponent
+    AdminComponent,
   ],
   imports: [
     BrowserModule,
