@@ -7,6 +7,7 @@ import { AdminPhotosComponent } from './photos/photos.component';
 import { AdminServicesComponent } from './services/services.component';
 import { AdminPartnersComponent } from './partners/partners.component';
 import { AdminContactComponent } from './contact/contact.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { AdminContactComponent } from './contact/contact.component';
   ],
   imports: [
     CommonModule,
-    BackOfficeRoutingModule
+    FormsModule,
+    BackOfficeRoutingModule,
   ]
 })
 export class BackOfficeModule { }

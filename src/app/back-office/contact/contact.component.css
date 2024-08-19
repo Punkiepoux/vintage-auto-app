@@ -1,0 +1,13 @@
+.custom-divider {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  border: 1.5px solid #f0f0f0;
+}
+
+.custom-input {
+  width: auto !important;
+  height: auto !important;
+  border: none !important;
+  margin: 0 !important;
+  font-size: inherit !important;
+}

@@ -1,1 +1,47 @@
 <h4 class="center">Informations de contact</h4>
+<div class="container">
+  <form (ngSubmit)="onSubmitContact(contactForm)" #contactForm="ngForm">
+    <div class="center">
+      <label><i class="material-icons">location_on</i> Adresse :</label>
+      <input class="center" name="address" type="text" [(ngModel)]="contact.address"><br><br>
+    </div>
+    <div class="center">
+      <label><i class="material-icons">phone</i> Téléphone :</label>
+      <input class="center" name="phone" type="text" [(ngModel)]="contact.phone"><br><br>
+    </div>
+    <div class="center">
+      <label><i class="material-icons">email</i> Email :</label>
+      <input class="center" name="email" type="email" [(ngModel)]="contact.email"><br><br>
+    </div>
+    <div class="center">
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+
+  <div class="divider custom-divider"></div>
+
+  <form (ngSubmit)="onSubmitHoraire(horaireForm)" #horaireForm="ngForm">
+    <table>
+      <caption><h4 class="center">Horaires</h4></caption>
+      <thead>
+        <tr>
+          <th>Jour</th>
+          <th>Horaire</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let day of dayList; let i = index">
+          <th>{{ jourList[i] }}</th>
+          <td>
+            <input class="custom-input" name="{{ day }}" type="text" [(ngModel)]="contact[day]">
+          </td>
+        </tr>
+        <tr>
+          <td class="center">
+            <input type="submit" value="Submit">
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </form>
+</div>

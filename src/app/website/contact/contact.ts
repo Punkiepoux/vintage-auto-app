@@ -10,6 +10,7 @@ export class Contact {
   friday: string;
   saturday: string;
   sunday: string;
+  [key: string]: string;
 
   constructor(
     address: string,
