@@ -1,1 +1,23 @@
-<p>partners works!</p>
+<div class="container">
+  <div>
+    <h1>Liste des partenaires</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Nom</th>
+          <th>Lien</th>
+          <th>Logo</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let partner of partnersList">
+          <td>{{ partner.name }}</td>
+          <td>{{ partner.lien }}</td>
+          <td><img [src]="partner.logo" alt="{{ partner.name }}" /></td>
+          <td>{{ partner.description }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

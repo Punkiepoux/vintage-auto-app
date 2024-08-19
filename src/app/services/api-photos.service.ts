@@ -10,7 +10,7 @@ export class ApiPhotosService {
 
   constructor(private http: HttpClient) { }
 
-  getUserInfo(): Observable<any> {
+  getPhotosInfo(): Observable<any> {
     return this.http.get(`${this.apiUrl}/photos`);
   }
 }

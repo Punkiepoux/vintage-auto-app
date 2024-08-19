@@ -13,7 +13,7 @@ export class AdminComponent implements OnInit {
   constructor(private apiAdminService: ApiAdminService) {}
 
   ngOnInit() {
-    this.apiAdminService.getUserInfo().subscribe((data: Admin[]) => {
+    this.apiAdminService.getAdminInfo().subscribe((data: Admin[]) => {
       this.adminList = data;
     });
   }

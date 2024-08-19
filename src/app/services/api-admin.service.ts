@@ -10,7 +10,7 @@ export class ApiAdminService {
 
   constructor(private http: HttpClient) { }
 
-  getUserInfo(): Observable<any> {
+  getAdminInfo(): Observable<any> {
     return this.http.get(`${this.apiUrl}/admin`);
   }
 }

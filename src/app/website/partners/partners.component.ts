@@ -1,6 +1,6 @@
 import { AfterViewInit, Component } from '@angular/core';
 import { PARTNERS } from './mock-partners';
-import { partners } from './partners';
+import { Partners } from './partners';
 import Swiper from 'swiper';
 import { Navigation } from 'swiper/modules';
 
@@ -10,7 +10,7 @@ import { Navigation } from 'swiper/modules';
   styleUrl: './partners.component.css'
 })
 export class PartnersComponent implements AfterViewInit{
-  partnerList: partners[] = PARTNERS;
+  partnerList: Partners[] = PARTNERS;
 
   ngAfterViewInit(): void {
     const swiper = new Swiper('.swiper', {
