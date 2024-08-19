@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ApiService } from '../../services/api-club.service';
+import { ApiContactService } from '../../services/api-club.service';
 import { Contact } from '../../website/contact/contact';
 import { NgForm } from '@angular/forms';
 
@@ -10,7 +10,7 @@ import { NgForm } from '@angular/forms';
   styleUrl: './contact.component.css'
 })
 export class AdminContactComponent {
-  constructor(private apiService: ApiService) {}
+  constructor(private apiContactService: ApiContactService) {}
 
   contact: Contact = {
     name: '',
@@ -34,7 +34,7 @@ export class AdminContactComponent {
   }
 
   loadContact(): void {
-    this.apiService.getClubInfo().subscribe((data: any) => {
+    this.apiContactService.getClubInfo().subscribe((data: any) => {
       if (Array.isArray(data) && data.length > 0) {
         this.contact = data[0];
       }
@@ -43,7 +43,7 @@ export class AdminContactComponent {
 
   onSubmitContact(contactForm: NgForm): void {
     console.log(contactForm.value);
-    this.apiService.changeClubInfo(contactForm.value).subscribe((response: any) => {
+    this.apiContactService.changeClubInfo(contactForm.value).subscribe((response: any) => {
       console.log(response);
       this.loadContact();
     });
@@ -51,7 +51,7 @@ export class AdminContactComponent {
 
   onSubmitHoraire(horaireForm: NgForm): void {
     console.log(horaireForm.value);
-    this.apiService.changeClubInfo(horaireForm.value).subscribe((response: any) => {
+    this.apiContactService.changeClubInfo(horaireForm.value).subscribe((response: any) => {
       console.log(response);
       this.loadContact();
     });

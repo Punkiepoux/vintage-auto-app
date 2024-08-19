@@ -4,16 +4,12 @@
     <tr>
       <th>Nom</th>
       <th>Email</th>
-      <th>Action</th>
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <th>Nom</th>
-      <th>Email</th>
-      <th>
-        <button>Supprimer</button>
-      </th>
+    <tr *ngFor="let admin of adminList">
+      <th>{{ admin.username }}</th>
+      <th>{{ admin.email }}</th>
     </tr>
   </tbody>
 </table>

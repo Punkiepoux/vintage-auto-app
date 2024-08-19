@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ApiService } from '../../services/api-club.service';
+import { ApiContactService } from '../../services/api-club.service';
 import { Contact } from './contact';
 import { CONTACTS } from './mock-contact';
 
@@ -9,7 +9,7 @@ import { CONTACTS } from './mock-contact';
   styleUrl: './contact.component.css'
 })
 export class ContactComponent implements OnInit {
-  constructor(private apiService: ApiService) {}
+  constructor(private apiContactService: ApiContactService) {}
 
   contact: Contact | undefined;
 
@@ -18,7 +18,7 @@ export class ContactComponent implements OnInit {
   }
 
   loadContact(): void {
-    this.apiService.getClubInfo().subscribe((data: any) => {
+    this.apiContactService.getClubInfo().subscribe((data: any) => {
       if (Array.isArray(data) && data.length > 0) {
         this.contact = data[0];
       }
