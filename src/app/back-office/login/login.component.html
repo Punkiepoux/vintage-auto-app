@@ -2,6 +2,7 @@
   <div class="col s12 m4 offset-m4">
     <div class="card hoverable">
       <div class="card-content center">
+        <h4>Vintage Auto 83</h4>
         <span class="card-title">Page de connexion</span>
         <p>
           <em>{{ message }}</em>
@@ -9,9 +10,9 @@
       </div>
       <form #loginForm="ngForm">
         <div class="center margin">
-          <label class="left" for="username">Username :</label>
+          <label class="left custom-text" for="username">Username :</label>
           <input
-            class="custom-input center"
+            class="custom-input center grey lighten-5 custom-text"
             type="text"
             id="username"
             [(ngModel)]="username"
@@ -20,9 +21,9 @@
           />
         </div>
         <div class="center margin">
-          <label class="left" for="password">Password :</label>
+          <label class="left custom-text" for="password">Password :</label>
           <input
-            class="custom-input center"
+            class="custom-input center grey lighten-5 custom-text"
             type="password"
             id="password"
             [(ngModel)]="password"
@@ -34,7 +35,7 @@
       <div class="card-action center">
         <a
           (click)="login()"
-          class="waves-effect waves-light btn"
+          class="waves-effect waves-light btn grey darken-4"
           *ngIf="!authService.isLoggedIn"
           >Se connecter</a
         >

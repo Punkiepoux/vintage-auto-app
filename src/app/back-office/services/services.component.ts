@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Service } from '../../website/services/service';
 
 @Component({
   selector: 'app-services',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrl: './services.component.css'
 })
 export class AdminServicesComponent {
-
+  serviceList: Service[] = [];
 }

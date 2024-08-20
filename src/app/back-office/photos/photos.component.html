@@ -1,1 +1,18 @@
-<p>photos works!</p>
+<div class="container photos-wrapper">
+  <h1 class="center">Gallerie Photos</h1>
+  <span>
+    <a class="waves-effect waves-light">Ajouter une photo</a>
+  </span>
+  <div class="row">
+    <div *ngFor="let photo of photoList" class="col s12 m6 l4">
+      <div class="card">
+        <a class="right">
+          <i class="material-icons">cancel</i>
+        </a>
+        <div class="card-image">
+          <img class="custom-img" src="https://materializecss.com/images/sample-1.jpg">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

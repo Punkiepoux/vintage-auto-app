@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { PHOTOS } from '../../website/photos/mock-photos';
+import { Photos } from '../../website/photos/photos';
 
 @Component({
   selector: 'app-photos',
@@ -6,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './photos.component.css'
 })
 export class AdminPhotosComponent {
-
+  photoList: Photos[] = PHOTOS;
 }
