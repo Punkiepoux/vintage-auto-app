@@ -8,6 +8,8 @@ import { AdminServicesComponent } from './services/services.component';
 import { BackOfficeComponent } from './back-office.component';
 import { LoginComponent } from './login/login.component';
 import { AuthGuard } from './auth.guard';
+import { AdminAddPartnerComponent } from './partners/add-partner.component';
+import { AdminEditPartnerComponent } from './partners/edit-partner.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
@@ -17,6 +19,8 @@ const routes: Routes = [
       { path: 'users', component: AdminComponent, canActivate: [AuthGuard] },
       { path: 'contact', component: AdminContactComponent, canActivate: [AuthGuard] },
       { path: 'partenaires', component: AdminPartnersComponent, canActivate: [AuthGuard] },
+      { path: 'partenaire/ajouter', component: AdminAddPartnerComponent, canActivate: [AuthGuard] },
+      { path: 'partenaire/:id', component: AdminEditPartnerComponent, canActivate: [AuthGuard] },
       { path: 'photos', component: AdminPhotosComponent, canActivate: [AuthGuard] },
       { path: 'services', component: AdminServicesComponent, canActivate: [AuthGuard] },
       { path: '', redirectTo: 'users', pathMatch: 'full' }

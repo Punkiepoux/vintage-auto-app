@@ -9,6 +9,8 @@ import { AdminPartnersComponent } from './partners/partners.component';
 import { AdminContactComponent } from './contact/contact.component';
 import { FormsModule } from '@angular/forms';
 import { LoginComponent } from './login/login.component';
+import { AdminAddPartnerComponent } from './partners/add-partner.component';
+import { AdminEditPartnerComponent } from './partners/edit-partner.component';
 
 
 @NgModule({
@@ -19,7 +21,9 @@ import { LoginComponent } from './login/login.component';
     AdminServicesComponent,
     AdminPartnersComponent,
     AdminContactComponent,
-    LoginComponent
+    LoginComponent,
+    AdminAddPartnerComponent,
+    AdminEditPartnerComponent,
   ],
   imports: [
     CommonModule,
