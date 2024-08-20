@@ -1,15 +1,17 @@
-<h4 class="center">Administrateurs</h4>
-<table>
-  <thead>
-    <tr>
-      <th>Nom</th>
-      <th>Email</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr *ngFor="let admin of adminList">
-      <th>{{ admin.username }}</th>
-      <th>{{ admin.email }}</th>
-    </tr>
-  </tbody>
-</table>
+<div class="container">
+  <h4 class="center">Administrateurs</h4>
+  <table>
+    <thead>
+      <tr>
+        <th>Nom</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let admin of adminList">
+        <th>{{ admin.username }}</th>
+        <th>{{ admin.email }}</th>
+      </tr>
+    </tbody>
+  </table>
+</div>

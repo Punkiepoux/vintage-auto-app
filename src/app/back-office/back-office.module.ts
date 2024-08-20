@@ -8,6 +8,8 @@ import { AdminServicesComponent } from './services/services.component';
 import { AdminPartnersComponent } from './partners/partners.component';
 import { AdminContactComponent } from './contact/contact.component';
 import { FormsModule } from '@angular/forms';
+import { LoginComponent } from './login/login.component';
+
 
 @NgModule({
   declarations: [
@@ -16,12 +18,13 @@ import { FormsModule } from '@angular/forms';
     AdminPhotosComponent,
     AdminServicesComponent,
     AdminPartnersComponent,
-    AdminContactComponent
+    AdminContactComponent,
+    LoginComponent
   ],
   imports: [
     CommonModule,
     FormsModule,
     BackOfficeRoutingModule,
-  ]
+  ],
 })
 export class BackOfficeModule { }

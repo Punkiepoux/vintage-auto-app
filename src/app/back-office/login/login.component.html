@@ -1,0 +1,45 @@
+<div class="row login-wrapper">
+  <div class="col s12 m4 offset-m4">
+    <div class="card hoverable">
+      <div class="card-content center">
+        <span class="card-title">Page de connexion</span>
+        <p>
+          <em>{{ message }}</em>
+        </p>
+      </div>
+      <form #loginForm="ngForm">
+        <div class="center margin">
+          <label class="left" for="username">Username :</label>
+          <input
+            class="custom-input center"
+            type="text"
+            id="username"
+            [(ngModel)]="username"
+            name="username"
+            required
+          />
+        </div>
+        <div class="center margin">
+          <label class="left" for="password">Password :</label>
+          <input
+            class="custom-input center"
+            type="password"
+            id="password"
+            [(ngModel)]="password"
+            name="password"
+            required
+          />
+        </div>
+      </form>
+      <div class="card-action center">
+        <a
+          (click)="login()"
+          class="waves-effect waves-light btn"
+          *ngIf="!authService.isLoggedIn"
+          >Se connecter</a
+        >
+        <a (click)="logout()" *ngIf="authService.isLoggedIn">Se déconnecter</a>
+      </div>
+    </div>
+  </div>
+</div>

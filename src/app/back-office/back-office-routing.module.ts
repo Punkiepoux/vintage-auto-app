@@ -6,16 +6,19 @@ import { AdminPartnersComponent } from './partners/partners.component';
 import { AdminPhotosComponent } from './photos/photos.component';
 import { AdminServicesComponent } from './services/services.component';
 import { BackOfficeComponent } from './back-office.component';
+import { LoginComponent } from './login/login.component';
+import { AuthGuard } from './auth.guard';
 
 const routes: Routes = [
+  { path: 'login', component: LoginComponent },
   { path: '',
     component: BackOfficeComponent,
     children: [
-      { path: 'users', component: AdminComponent },
-      { path: 'contact', component: AdminContactComponent },
-      { path: 'partenaires', component: AdminPartnersComponent },
-      { path: 'photos', component: AdminPhotosComponent },
-      { path: 'services', component: AdminServicesComponent },
+      { path: 'users', component: AdminComponent, canActivate: [AuthGuard] },
+      { path: 'contact', component: AdminContactComponent, canActivate: [AuthGuard] },
+      { path: 'partenaires', component: AdminPartnersComponent, canActivate: [AuthGuard] },
+      { path: 'photos', component: AdminPhotosComponent, canActivate: [AuthGuard] },
+      { path: 'services', component: AdminServicesComponent, canActivate: [AuthGuard] },
       { path: '', redirectTo: 'users', pathMatch: 'full' }
     ]
   }
