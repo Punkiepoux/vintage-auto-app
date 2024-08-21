@@ -1,7 +1,6 @@
 import { ApiPartnersService } from './../../services/api-partners.service';
 import { Component, OnInit } from '@angular/core';
 import { Partners } from './../../website/partners/partners';
-import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-partners',
@@ -13,7 +12,6 @@ export class AdminPartnersComponent implements OnInit {
 
   constructor(
     private apiPartnersService: ApiPartnersService,
-    private router: Router
   ) { }
 
   ngOnInit(): void {
