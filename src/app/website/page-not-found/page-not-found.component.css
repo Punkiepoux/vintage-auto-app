@@ -1,0 +1,12 @@
+.not-found-img {
+  margin-top: 32px;
+  max-height: 60vh;
+}
+
+h1 {
+  color: inherit !important;
+}
+
+a {
+  color: inherit !important;
+}

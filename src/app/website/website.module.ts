@@ -9,6 +9,7 @@ import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
 import { PartnersComponent } from './partners/partners.component';
 import { ServicesComponent } from './services/services.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 
 
@@ -21,7 +22,8 @@ import { ServicesComponent } from './services/services.component';
     HomeComponent,
     PartnersComponent,
     PhotosComponent,
-    ServicesComponent
+    ServicesComponent,
+    PageNotFoundComponent
   ],
   imports: [
     CommonModule,
