@@ -22,8 +22,4 @@ export class AdminPartnersComponent implements OnInit {
     });
   }
 
-  addPartner() {
-    this.router.navigate(['/admin/partenaire/ajouter']);
-  }
-
 }

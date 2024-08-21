@@ -10,6 +10,7 @@ import { LoginComponent } from './login/login.component';
 import { AuthGuard } from './auth.guard';
 import { AdminAddPartnerComponent } from './partners/add-partner.component';
 import { AdminEditPartnerComponent } from './partners/edit-partner.component';
+import { AdminAddServiceComponent } from './services/add-service.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
@@ -23,6 +24,7 @@ const routes: Routes = [
       { path: 'partenaire/:id', component: AdminEditPartnerComponent, canActivate: [AuthGuard] },
       { path: 'photos', component: AdminPhotosComponent, canActivate: [AuthGuard] },
       { path: 'services', component: AdminServicesComponent, canActivate: [AuthGuard] },
+      { path: 'service/ajouter', component: AdminAddServiceComponent, canActivate: [AuthGuard] },
       { path: '', redirectTo: 'users', pathMatch: 'full' }
     ]
   }

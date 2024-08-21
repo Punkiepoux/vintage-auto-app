@@ -10,7 +10,7 @@ export class ApiServicesService {
 
   constructor(private http: HttpClient) { }
 
-  getUserInfo(): Observable<any> {
+  getServicesInfo(): Observable<any> {
     return this.http.get(`${this.apiUrl}/services`);
   }
 }
