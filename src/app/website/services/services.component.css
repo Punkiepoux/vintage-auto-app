@@ -1,3 +1,9 @@
 .services-wrapper {
   min-height: 90vh;
 }
+
+.custom-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

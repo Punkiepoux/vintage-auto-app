@@ -1,3 +1,24 @@
 <div class="services-wrapper">
-
+  <div class="container">
+    <div class="row">
+      <div class="col s12 m10 l8 offset-m1 offset-l2">
+        <table>
+          <thead>
+            <tr>
+              <th>Service</th>
+              <th>Description</th>
+              <th>Prix</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let service of serviceList">
+              <td>{{ service.title }}</td>
+              <td>{{ service.description }}</td>
+              <td>{{ service.cost }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
 </div>
