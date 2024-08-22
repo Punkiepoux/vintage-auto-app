@@ -1,6 +1,6 @@
-import { Partners } from "./partners";
+import { Partner } from "./partner";
 
-export const PARTNERS: Partners[] = [
+export const PARTNER: Partner[] = [
   {
     id: 0,
     name: "Mon Controle Technique",

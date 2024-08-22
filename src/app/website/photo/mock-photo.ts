@@ -1,6 +1,6 @@
-import { Photos } from "./photos";
+import { Photo } from "./photo";
 
-export const PHOTOS: Photos[] = [
+export const PHOTO: Photo[] = [
   {
     id: 0,
     picture: "https://materializecss.com/images/sample-1.jpg"

@@ -1,4 +1,4 @@
-export class Partners {
+export class Partner {
   id: number;
   name: string;
   lien: string;

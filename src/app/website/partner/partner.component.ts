@@ -1,22 +1,22 @@
 import { AfterViewInit, Component, OnInit } from '@angular/core';
-import { PARTNERS } from './mock-partners';
-import { Partners } from './partners';
+import { PARTNER } from './mock-partner';
+import { Partner } from './partner';
 import Swiper from 'swiper';
 import { Navigation } from 'swiper/modules';
-import { ApiPartnersService } from '../../services/api-partners.service';
+import { ApiPartnerService } from '../../services/api-partner.service';
 
 @Component({
-  selector: 'app-partners',
-  templateUrl: './partners.component.html',
-  styleUrl: './partners.component.css'
+  selector: 'app-partner',
+  templateUrl: './partner.component.html',
+  styleUrl: './partner.component.css'
 })
-export class PartnersComponent implements OnInit,AfterViewInit {
-  partnerList: Partners[] = PARTNERS;
+export class PartnerComponent implements OnInit,AfterViewInit {
+  partnerList: Partner[] = PARTNER;
 
-  constructor(private apiPartnersService: ApiPartnersService) { }
+  constructor(private apiPartnerService: ApiPartnerService) { }
 
   ngOnInit(): void {
-    this.apiPartnersService.getPartnersInfo().subscribe(data => {
+    this.apiPartnerService.getPartnerInfo().subscribe(data => {
       this.partnerList = data;
     });
   }
@@ -26,7 +26,7 @@ export class PartnersComponent implements OnInit,AfterViewInit {
       modules: [Navigation],
 
       slidesPerView: 1,
-      spaceBetween: 10,
+      spaceBetween: 30,
       effect: 'slide',
       loop: true,
       simulateTouch: true,
@@ -39,11 +39,11 @@ export class PartnersComponent implements OnInit,AfterViewInit {
       breakpoints: {
         600: {
           slidesPerView: 2,
-          spaceBetween: 10
+          spaceBetween: 30
         },
         992: {
           slidesPerView: 3,
-          spaceBetween: 10
+          spaceBetween: 30
         }
       },
 

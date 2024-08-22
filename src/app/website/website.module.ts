@@ -4,27 +4,27 @@ import { WebsiteRoutingModule } from './website-routing.module';
 import { WebsiteComponent } from './website.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-import { PhotosComponent } from './photos/photos.component';
+import { PhotoComponent } from './photo/photo.component';
 import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
-import { PartnersComponent } from './partners/partners.component';
-import { ServicesComponent } from './services/services.component';
+import { PartnerComponent } from './partner/partner.component';
+import { BenefitComponent } from './benefit/benefit.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 
 
 @NgModule({
   declarations: [
-    WebsiteComponent,
-    HeaderComponent,
-    FooterComponent,
-    ContactComponent,
-    HomeComponent,
-    PartnersComponent,
-    PhotosComponent,
-    ServicesComponent,
-    PageNotFoundComponent
-  ],
+      WebsiteComponent,
+      HeaderComponent,
+      FooterComponent,
+      ContactComponent,
+      HomeComponent,
+      PartnerComponent,
+      PhotoComponent,
+      BenefitComponent,
+      PageNotFoundComponent
+    ],
   imports: [
     CommonModule,
     WebsiteRoutingModule

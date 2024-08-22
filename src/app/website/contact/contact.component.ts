@@ -9,19 +9,16 @@ import { CONTACTS } from './mock-contact';
   styleUrl: './contact.component.css'
 })
 export class ContactComponent implements OnInit {
+  contact: Contact = CONTACTS;
+
   constructor(private apiContactService: ApiContactService) {}
 
-  contact: Contact | undefined;
-
   ngOnInit() {
-    this.loadContact();
-  }
-
-  loadContact(): void {
     this.apiContactService.getClubInfo().subscribe((data: any) => {
       if (Array.isArray(data) && data.length > 0) {
         this.contact = data[0];
       }
     });
   }
+
 }

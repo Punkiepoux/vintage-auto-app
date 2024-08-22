@@ -1,4 +1,4 @@
-export class Service {
+export class Benefit {
   id: number;
   title: string;
   description: string;
