@@ -7,7 +7,7 @@ import { catchError, map, Observable, of } from 'rxjs';
 })
 export class AuthService {
 
-  private expirationDuration = 1800000;
+  private expirationDuration = 900000;
 
   constructor(private apiLoginService: ApiLoginService) {
     this.loadLoginStatus();

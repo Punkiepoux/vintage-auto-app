@@ -22,7 +22,6 @@ export class ContactComponent implements OnInit {
       if (Array.isArray(data) && data.length > 0) {
         this.contact = data[0];
       }
-      console.log(this.contact);
     });
   }
 }
