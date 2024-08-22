@@ -5,7 +5,7 @@ import { NgForm } from '@angular/forms';
 
 
 @Component({
-  selector: 'app-contact',
+  selector: 'app-admin-contact',
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.css'
 })

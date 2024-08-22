@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { Partner } from '../../website/partner/partner';
 
 @Component({
-  selector: 'app-partners',
+  selector: 'app-admin-partners',
   templateUrl: './partner.component.html',
   styleUrl: './partner.component.css'
 })
