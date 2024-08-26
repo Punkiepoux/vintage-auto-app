@@ -8,13 +8,20 @@ import { ApiBenefitService } from '../../services/api-benefit.service';
   styleUrl: './benefit.component.css'
 })
 export class AdminBenefitComponent implements OnInit {
-  serviceList: Benefit[] = [];
+  benefitList: Benefit[] = [];
 
   constructor(private apiBenefitService: ApiBenefitService) { }
 
   ngOnInit(): void {
-    this.apiBenefitService.getServicesInfo().subscribe((data: Benefit[]) => {
-      this.serviceList = data;
+    this.getBenefit();
+  }
+
+  getBenefit(): Benefit[] {
+    this.apiBenefitService.getBenefitInfo().subscribe((data: Benefit[]) => {
+      if(data.length > 0) {
+        this.benefitList = data;
+      }
     });
+    return this.benefitList;
   }
 }

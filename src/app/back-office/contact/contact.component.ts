@@ -42,7 +42,6 @@ export class AdminContactComponent {
   }
 
   onSubmitContact(contactForm: NgForm): void {
-    console.log(contactForm.value);
     this.apiContactService.changeClubInfo(contactForm.value).subscribe((response: any) => {
       console.log(response);
       this.loadContact();
@@ -50,7 +49,6 @@ export class AdminContactComponent {
   }
 
   onSubmitHoraire(horaireForm: NgForm): void {
-    console.log(horaireForm.value);
     this.apiContactService.changeClubInfo(horaireForm.value).subscribe((response: any) => {
       console.log(response);
       this.loadContact();

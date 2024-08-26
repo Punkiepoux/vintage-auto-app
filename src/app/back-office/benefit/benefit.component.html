@@ -9,18 +9,16 @@
     <table>
       <thead>
         <tr>
-          <th>Nom</th>
-          <th>Lien</th>
-          <th>Logo</th>
+          <th>Service</th>
           <th>Description</th>
+          <th>Prix</th>
         </tr>
       </thead>
       <tbody>
-        <tr *ngFor="let service of serviceList">
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
+        <tr *ngFor="let benefit of benefitList">
+          <td>{{ benefit.name }}</td>
+          <td>{{ benefit.description }}</td>
+          <td>{{ benefit.price }}</td>
         </tr>
       </tbody>
     </table>

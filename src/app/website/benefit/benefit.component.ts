@@ -14,11 +14,15 @@ export class BenefitComponent implements OnInit {
   constructor(private apiBenefitService: ApiBenefitService) { }
 
   ngOnInit(): void {
-    console.log(this.benefitList);
-    this.apiBenefitService.getServicesInfo().subscribe((data: Benefit[]) => {
+    this.getBenefit();
+  }
+
+  getBenefit(): Benefit[] {
+    this.apiBenefitService.getBenefitInfo().subscribe((data: Benefit[]) => {
       if(data.length > 0) {
         this.benefitList = data;
       }
     });
+    return this.benefitList;
   }
 }

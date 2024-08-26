@@ -10,7 +10,12 @@ export class ApiBenefitService {
 
   constructor(private http: HttpClient) { }
 
-  getServicesInfo(): Observable<any> {
+  getBenefitInfo(): Observable<any> {
     return this.http.get(`${this.apiUrl}/services`);
   }
+
+  addBenefit(benefit: any): Observable<any> {
+    return this.http.post(`${this.apiUrl}/services`, benefit);
+  }
+
 }

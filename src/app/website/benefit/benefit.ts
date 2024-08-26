@@ -1,17 +1,17 @@
 export class Benefit {
   id: number;
-  title: string;
+  name: string;
   description: string;
-  cost: number;
+  price: number;
   constructor(
     id: number,
-    title: string,
+    name: string,
     description: string,
-    cost: number,
+    price: number,
   ) {
     this.id = id;
-    this.title = title;
+    this.name = name;
     this.description = description;
-    this.cost = cost;
+    this.price = price;
   }
 }

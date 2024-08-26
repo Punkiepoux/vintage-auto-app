@@ -45,4 +45,5 @@ export class ApiContactService {
   changeClubInfo(data: any): Observable<any> {
     return this.http.patch(`${this.apiUrl}/contact`, data);
   }
+
 }
